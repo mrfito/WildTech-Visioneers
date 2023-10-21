@@ -1,6 +1,13 @@
 # WildTech-Visioneers
+This is the GitHub repo for the solution created by team WildTech-Visioneerss for the 2023 O'Reilly Architectural Kata. It contains a proposed architecture for Wildlife.ai.
 
-## Problem
+Team contact: NEED GROUP ADDRESS
+
+Team members:
+
+Add names with links to linkedin profiles
+
+## Overview
 
 Wildlife Watcher
 
@@ -66,3 +73,32 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
     - identifies the species
     - An API or interface that allows Mobile app to communicate with the cameras.
 - Third party services (AI, etc)
+
+
+ADRs
+The linked ADRs below record the main architecture decisions regarding the proposed design, including their context and rationale.
+
+ADR 001 - xxxx
+
+## Preliminary phase
+Before proposing an architecture, one must better understand the organization, its context and its capabilities.
+
+Wildlife.ai (from website)
+
+- charitable trust that uses artificial intelligence to accelerate wildlife conservation.
+- works with grassroots wildlife conservation projects and develop open-source solutions using machine learning.
+- organises community events, seminars and educational activities to build and maintain machine learning solutions to reduce the current rate of species extinction.
+### Our purpose
+To ensure artificial intelligence is widely applied to protect biodiversity.
+### Other projects
+[Wildlife Watcher](https://wildlife.ai/projects/wildlife-watcher/) A wildlife camera that records animals and uses AI to identify them
+[Spyfish Aotearoa](https://wildlife.ai/projects/spyfish-aotearoa/) A citizen science and machine learning approach to identify fish in baited underwater videos
+[Pepeketua ID](https://wildlife.ai/projects/pepeketua-id/) A pattern recognition software that facilitates the individual identification of Pepeketua, New Zealand endemic frogs.
+[Nesher Bari](https://wildlife.ai/projects/nesher-bari/) Using data analytics to boost the protection of griffon vultures.
+[Koster Observatory](https://wildlife.ai/projects/koster-observatory/) A machine learning and citizen science approach to analyse underwater footage from Sweden’s first marine national park.
+
+Most of the project above include open source system that rely on cameras to capture wildlife and the use of machine learning and AI to aid in tracking, identifying, or studying wildlife. The first project is the wildlife camera that will be use on this solution.
+
+The sucess of the current open source project using cameras and AI makes indicates that Wildlife.ai is ready to embark on initiative that leverages its current capabilities and expands them with the introuction of multiple integrations.
+
+## Overall Solution
