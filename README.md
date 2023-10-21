@@ -43,9 +43,18 @@ Identify Components
    1 Turn on and off
    2 Change settings
    3 Upload models
+   4 receive small alert from camera
   - Analyze videos using third parties
+  - Train edge models. using their own labelled videos
   - Publish frames to iNaturalist
+  - Publish species occurrances
 - System: Mobile App
+- Camera
+  1 triggered based on the movement of target animals
+  2 identifies the species
+  3 process the footage
+  4 send a small alert message to the users via LoraWan, 3G or satellite
+  
 - Third party services (AI, etc)
 
 
