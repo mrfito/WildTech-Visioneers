@@ -40,9 +40,9 @@ Hunders of users
 Identify Components
 - User
   - Control camera
-   - Turn on and off
-   - Change settings
-   - Upload models
+   1 Turn on and off
+   2 Change settings
+   3 Upload models
   - Analyze videos using third parties
   - Publish frames to iNaturalist
 - System: Mobile App
