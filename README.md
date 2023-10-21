@@ -11,7 +11,8 @@ Users: biologists and nature enthusiasts (hundreds).
 Requirements
 - Users should be able to communicate with the camera using a mobile app (to set the cameras on/off and adjust settings without opening the cameras)
 - Users should be able to analyze the videos using common camera trap labelling platforms (Wildlife Insights https://wildlifeinsights.org/, TrapTagger https://wildeyeconservation.org/traptagger or Trapper https://gitlab.com/trapper-project/trapper)
-- Users should be able to publish frames from the videos to iNaturalist for experts to help with the identification of the speciesUsers should be able to easily train edge models. using their own labelled videos, and upload the models to the cameras (maybe using third party services like Roboflow https://roboflow.com/, Edge Impulse https://edgeimpulse.com/ or TensorFlow Lite https://www.tensorflow.org/lite)
+- Users should be able to publish frames from the videos to iNaturalist for experts to help with the identification of the species
+- Users should be able to easily train edge models. using their own labelled videos, and upload the models to the cameras (maybe using third party services like Roboflow https://roboflow.com/, Edge Impulse https://edgeimpulse.com/ or TensorFlow Lite https://www.tensorflow.org/lite)
 - Users should be able to publish the species occurrences to GBIF https://www.gbif.org/ using the Camtrap DP https://tdwg.github.io/camtrap-dp/, data exchange format https://tdwg.github.io/camtrap-dp/
 - Cameras should be able to process the footage on the device and send a small alert message to the users via LoraWan, 3G or satellite
 
@@ -33,7 +34,20 @@ Hunders of users
 - Scalabitliy
 
 - Real time
-  then availability, reliabilty, perfoermance 
+  then availability, reliabilty, perfoermance
+
+
+Identify Components
+- User
+  - Control camera
+   - Turn on and off
+   - Change settings
+   - Upload models
+  - Analyze videos using third parties
+  - Publish frames to iNaturalist
+- System: Mobile App
+- Third party services (AI, etc)
+
 
   
 
