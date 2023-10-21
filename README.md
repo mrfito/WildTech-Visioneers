@@ -26,7 +26,7 @@ The API for the specific camera hasn’t been selected, allowing teams to specif
 Using https://www.developertoarchitect.com/downloads/architecture-characteristics-worksheet.pdf
 
 
-- Scalabitliy: to support hunders of users
+- Scalabitliy: to support hundreds of users
 - Availability, reliabilty, performance: to support near real time communication
 - Interoperability: The architecture should support integration with various third-party services and platforms, such as Wildlife Insights, TrapTagger, iNaturalist, and GBIF. Interoperability enables users to work with their preferred tools and extends the project's reach by connecting it to established conservation and research networks. Since requeriments state 
   - communicate with camera
@@ -34,7 +34,7 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
   - Publish to iNaturalist
   - Train model
   - Publish
- - Security: Protecting the data, including species occurrences and user information, is paramount. Robust security measures, both in terms of data transfer and on-device processing, are essential to prevent unauthorized access, data breaches, and ensure the ethical handling of wildlife observation data.
+ - Security: To protect the data and prevent unauthorized access
 
 ## Identify Components
 - User
@@ -42,32 +42,27 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
     - Turn on and off
     - Change settings
     - Upload models
-    - receive small alert from camera
+  - Receive small alert from camera
   - Analyze videos using third parties
   - Train edge models. using their own labelled videos
   - Publish frames to iNaturalist
   - Publish species occurrances
 - System: Mobile App
 - Wildlife Camera
-  - physical devices
-  - ultra-low-power microcontrollers
-  - Watertight 3D Printed Enclosure
-  - interchangeable modules including
-    - optical sensors
-    - IR lights
-    - transceiver modules
-    - batteries
-  - triggered based on the movement of target animals
-  - send a small alert message to the users via LoraWan, 3G or satellite
-  - capture video footage
-  - process video
-  - identifies the species
-  - An API or interface that allows teams to specify hardware behavior and communicate with the cameras.
-
+  - Hardware
+    - physical devices
+    - ultra-low-power microcontrollers (up to 512KB Flash)
+    - watertight 3D Printed Enclosure
+    - interchangeable modules including
+      - optical sensors
+      - IR lights
+      - transceiver modules
+      - batteries
+  - Software
+    - triggered based on the movement of target animals
+    - send a small alert message to the users via LoraWan, 3G or satellite
+    - capture video footage
+    - process video
+    - identifies the species
+    - An API or interface that allows Mobile app to communicate with the cameras.
 - Third party services (AI, etc)
-
-
-
-
-  
-
