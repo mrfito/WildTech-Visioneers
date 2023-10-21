@@ -19,7 +19,7 @@ Additional Context
 The camera hardware will be a combination of ultra-low-power microcontrollers (up to 512KB Flash) and interchangeable modules (e.g. optical sensor, IR lights, transceiver module, batteries) enclosed in a watertight and 3D printed enclosure.
 The API for the specific camera hasn’t been selected, allowing teams to specify what behavior they might need from the hardware, helping the team choose appropriate hardware.
 
-Architecture Chjaracteristics
+Architecture Characteristics
 Using https://www.developertoarchitect.com/downloads/architecture-characteristics-worksheet.pdf
 Since requeriments state 
 communicate with camera
