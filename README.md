@@ -28,15 +28,13 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
 
 - Scalabitliy: to support hunders of users
 - Availability, reliabilty, performance: to support near real time communication
-
-Interoperability: The architecture should support integration with various third-party services and platforms, such as Wildlife Insights, TrapTagger, iNaturalist, and GBIF. Interoperability enables users to work with their preferred tools and extends the project's reach by connecting it to established conservation and research networks. Since requeriments state 
-- communicate with camera
-- analyze video using third party platforms
-- Publish to iNaturalist
-- Train model
-- Publish
-
-Security: Protecting the data, including species occurrences and user information, is paramount. Robust security measures, both in terms of data transfer and on-device processing, are essential to prevent unauthorized access, data breaches, and ensure the ethical handling of wildlife observation data.
+- Interoperability: The architecture should support integration with various third-party services and platforms, such as Wildlife Insights, TrapTagger, iNaturalist, and GBIF. Interoperability enables users to work with their preferred tools and extends the project's reach by connecting it to established conservation and research networks. Since requeriments state 
+  - communicate with camera
+  - analyze video using third party platforms
+  - Publish to iNaturalist
+  - Train model
+  - Publish
+ - Security: Protecting the data, including species occurrences and user information, is paramount. Robust security measures, both in terms of data transfer and on-device processing, are essential to prevent unauthorized access, data breaches, and ensure the ethical handling of wildlife observation data.
 
 ## Identify Components
 - User
