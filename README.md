@@ -17,7 +17,7 @@ Users: biologists and nature enthusiasts (hundreds).
 - Users should be able to publish the species occurrences to GBIF https://www.gbif.org/ using the [Camtrap DP](https://tdwg.github.io/camtrap-dp/), [data exchange format](https://tdwg.github.io/camtrap-dp/)
 - Cameras should be able to process the footage on the device and send a small alert message to the users via LoraWan, 3G or satellite
 
-### dditional Context
+### Additional Context
 The camera hardware will be a combination of ultra-low-power microcontrollers (up to 512KB Flash) and interchangeable modules (e.g. optical sensor, IR lights, transceiver module, batteries) enclosed in a watertight and 3D printed enclosure.
 
 The API for the specific camera hasn’t been selected, allowing teams to specify what behavior they might need from the hardware, helping the team choose appropriate hardware.
@@ -40,6 +40,9 @@ Hunders of users
 Real time
 - then availability, reliabilty, performance
 
+Interoperability: The architecture should support integration with various third-party services and platforms, such as Wildlife Insights, TrapTagger, iNaturalist, and GBIF. Interoperability enables users to work with their preferred tools and extends the project's reach by connecting it to established conservation and research networks
+
+Security: Protecting the data, including species occurrences and user information, is paramount. Robust security measures, both in terms of data transfer and on-device processing, are essential to prevent unauthorized access, data breaches, and ensure the ethical handling of wildlife observation data.
 
 ## Identify Components
 - User
@@ -53,12 +56,20 @@ Real time
   - Publish frames to iNaturalist
   - Publish species occurrances
 - System: Mobile App
-- Camera
+- Wildlife Camera
+  - physical devices
+  - ultra-low-power microcontrollers
+  - interchangeable modules including
+    - optical sensors
+    - IR lights
+    - transceiver modules
+    - batteries
   - triggered based on the movement of target animals
-  - identifies the species
-  - process the footage
   - send a small alert message to the users via LoraWan, 3G or satellite
-  
+  - capture video footage
+  - process video
+  - identifies the species
+
 - Third party services (AI, etc)
 
 
