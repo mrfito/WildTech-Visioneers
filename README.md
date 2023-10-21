@@ -32,5 +32,8 @@ then integrations
 Hunders of users
 - Scalabitliy
 
+- Real time
+  then availability, reliabilty, perfoermance 
+
   
 
