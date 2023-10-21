@@ -69,6 +69,7 @@ Security: Protecting the data, including species occurrences and user informatio
   - capture video footage
   - process video
   - identifies the species
+  - An API or interface that allows teams to specify hardware behavior and communicate with the cameras.
 
 - Third party services (AI, etc)
 
