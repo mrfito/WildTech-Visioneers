@@ -44,7 +44,7 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
 - Security: To protect the data and prevent unauthorized access
 
 ## Identify Components
-- User
+- System: Mobile App
   - Control camera
     - Turn on and off
     - Change settings
@@ -55,8 +55,6 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
   - Publishes frames to iNaturalist
   - Publishes species occurrences
 
-
-- System: Mobile App
 - Wildlife Camera
   - Hardware
     - Physical devices
@@ -75,6 +73,7 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
     - Identifies  species
     - Provides an API or interface to control camera and settings and upload models
     - Run models
+
 - Third party services (AI, etc)
 
 
@@ -112,3 +111,13 @@ This project is supported by WATCH VIDEO  TO JOT DONW THE LEADER THAT SUPPORTS I
 
 ##  Opportunities and Solutions
 ## Overall Solution
+
+
+### Phases
+#### Near term
+Focus on camera API and Mobile app
+Release code so community can contribute to it
+#### Mid term
+Start developing most importatnt integrations
+#### Long term
+Develop integrations
