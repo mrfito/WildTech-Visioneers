@@ -1,11 +1,12 @@
-# WildTech-Visioneers
+# WildTech-Visioneers  WHAT IS THE NAME THAT WE REGISTERED AT THE END WITH THIS REPO?
 This is the GitHub repository for a solution created by team WildTech-Visioneers during the 2023 O'Reilly Architectural Kata. It contains a proposed architecture for Wildlife.ai project for open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
 
 Team contact: NEED GROUP ADDRESS
 
 Team members:
-
-Add names with links to linkedin profiles
+[Vijji Guruswamy](https://www.linkedin.com/in/vijji-guruswamy-a2020714)
+[Adam Hill](https://www.linkedin.com/in/ahill/)
+[Rodolfo Nunez](https://www.linkedin.com/in/rodolfo-a-nunez/)
 
 ## Overview
 
@@ -31,7 +32,6 @@ The API for the specific camera hasn’t been selected, allowing teams to specif
 
 ## Architecture Characteristics
 Using https://www.developertoarchitect.com/downloads/architecture-characteristics-worksheet.pdf
-
 
 - Scalability: Ensuring the system can support hundreds
 - Availability, reliabilty, performance: Facilitating near real time communication
@@ -100,16 +100,16 @@ Most of these projects involve machine vision, open-source systems that rely on 
 
 ## Architecture Vision
 ### Architecture Project
-This project is supported by Wildlife Excecutive Director Victor Anton and Board member Joshua Yellin ensuring excutive support needed for a project of this importance to the Widlife organization
+This project garners the support of Wildlife Executive Director, Victor Anton, and Board member Joshua Yellin, ensuring the executive backing necessary for a project of this magnitude within the Wildlife organization.
 ### Stakeholders, Concerns, and Business Requirements
-- Biologists: Interested in adopting new technologies to support their work and conservation efforts. Concerns include the costs and learning curve of new solutions. User friendly solutions are preferred
-- Enthusiast: Curious about wildlife, concern about costs and effort.  User friendly. User friendly solutions are important
-- Wildlife.ai: A charitable trust with a keen interest in using artificial intelligence to expedite wildlife conservation. The funding and success of projects are pivotal to its mission and the future of the organization.
+- Biologists: These stakeholders are keen to embrace new technologies that can aid their work in wildlife conservation. They have concerns about the costs and the learning curve associated with adopting new solutions. User-friendly solutions are strongly preferred.
+- Enthusiasts: Those who harbor a genuine curiosity for wildlife are eager to engage with the project. However, they are also sensitive to financial considerations and the effort involved. The accessibility and user-friendliness of the system are of paramount importance to them.
+- Wildlife.ai: As a charitable trust dedicated to using artificial intelligence for the acceleration of wildlife conservation, Wildlife.ai places utmost importance on the funding and success of projects, as they are pivotal to the organization's mission and its future.
 ###  Assumptions
 - Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This presents a significant challenge as the system needs to function in remote or potentially off-grid areas, where connectivity may be limited or unreliable.
 - Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
 - Limited User Base: The user base comprises only a few hundred users. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
-- Camera: Currently Wildlife.ai has a project called Wildlife Watcher that develop a camera that could be enhance for this project. Assumption is that this camera will be used and will have at least these minimum specifications:
+- Camera: The project takes advantage of the existing Wildlife.ai project, Wildlife Watcher, and assumes that its camera will be utilized. Furthermore, it establishes minimum hardware and software specifications for this camera.
   - Wildlife Camera
     - Hardware
       - Physical devices
@@ -130,7 +130,7 @@ This project is supported by Wildlife Excecutive Director Victor Anton and Board
       - Identifies species using models
 
 ### Overall Solution
-Develop and mobile application that can run on the leading operating systems (i.e. windows, MacOS, Android) that provides the following features:
+The proposed solution entails the development of a mobile application compatible with leading operating systems, such as Windows, MacOS, and Android, offering the following features:
   - Camera control
     - Turn on and off
     - Change settings
@@ -142,20 +142,22 @@ Develop and mobile application that can run on the leading operating systems (i.
   - Publishes species occurrences
 #### Phases
 ##### Near term
-Focus should be on specifying the API needed on the wildlife cameras and on developing the Mobile app with a minimum set of features that proof viability of this project. These minimum set of feauture must include:
-- Android (due to its share of the [mobile market share](https://gs.statcounter.com/os-market-share/mobile/worldwide)) 
+The initial phase focuses on specifying the required API for Wildlife cameras and developing a mobile app with a minimal feature set to demonstrate the project's viability. This feature set must encompass the following:
+- Prioritize Android due to its significant share of the [mobile market share](https://gs.statcounter.com/os-market-share/mobile/worldwide)) 
 - Camera control
   - Turn on and off
   - Change settings
   - Upload models
 - Receives alerts from cameras via email
-- All integrations can be done at this time manually by using the third party sites to upload picture and videos for identification
-- Release code so community can contribute to it
+- Manual Integrations: During this phase, all integrations can be conducted manually by utilizing third-party platforms to upload images and videos for identification.
+- Community Involvement: Release the code to engage the community and encourage contributions.
 ##### Mid term
-Start developing most importatnt integrations
+In the intermediate phase, the focus shifts to developing crucial integrations, including
 - Integrated with third-party platforms to analyzes videos
 - Allow to label vidos to enable training edge models
 - Publishes frames to iNaturalist
 - Publishes species occurrences
 ##### Long term
-Develop integrations
+The long-term phase concentrates on further developing and expanding integrations, solidifying the project's capabilities and reach.
+
+This phased approach ensures the project's incremental growth and the gradual realization of its objectives while aligning with stakeholder needs and concerns.
