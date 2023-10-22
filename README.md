@@ -1,5 +1,5 @@
 # WildTech-Visioneers
-This is the GitHub repository for a solution created by team WildTech-Visioneers team during the 2023 O'Reilly Architectural Kata. It contains a proposed architecture for Wildlife.ai project for open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
+This is the GitHub repository for a solution created by team WildTech-Visioneers during the 2023 O'Reilly Architectural Kata. It contains a proposed architecture for Wildlife.ai project for open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
 
 Team contact: NEED GROUP ADDRESS
 
