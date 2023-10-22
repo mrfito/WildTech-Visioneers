@@ -109,7 +109,16 @@ This project is supported by WATCH VIDEO  TO JOT DONW THE LEADER THAT SUPPORTS I
 - Enthusiast: Curious about wildlife, concern about costs and effort.  User friendly. User friendly solutions are important
 - Wildlife.ai: A charitable trust with a keen interest in using artificial intelligence to expedite wildlife conservation. The funding and success of projects are pivotal to its mission and the future of the organization.
 
-##  Opportunities and Solutions
+## Opportunities and Solutions
+
+##  Assumptions
+Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This presents a significant challenge as the system needs to function in remote or potentially off-grid areas, where connectivity may be limited or unreliable.
+
+Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
+
+Limited User Base: The user base comprises only a few hundred users. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
+
+
 ## Overall Solution
 
 
