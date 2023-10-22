@@ -71,10 +71,8 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
     - Captures video footage
     - Processes video
     - Identifies  species
-    - Provides an API or interface to control camera and settings and upload models
-    - Run models
-
-- Third party services (AI, etc)
+    - Provides an API or interface to control camera and settings and download models
+    - Identifies species using models
 
 
 ADRs
@@ -86,7 +84,6 @@ ADR 001 - xxxx
 Before proposing an architecture, a comprehensive understanding of the organization, its context, and its capabilities is essential
 
 Wildlife.ai (from website)
-
 - charitable trust that uses artificial intelligence to accelerate wildlife conservation.
 - works with grassroots wildlife conservation projects and develop open-source solutions using machine learning.
 - organises community events, seminars and educational activities to build and maintain machine learning solutions to reduce the current rate of species extinction.
@@ -99,34 +96,66 @@ To ensure artificial intelligence is widely applied to protect biodiversity.
 [Nesher Bari](https://wildlife.ai/projects/nesher-bari/) Using data analytics to boost the protection of griffon vultures.
 [Koster Observatory](https://wildlife.ai/projects/koster-observatory/) A machine learning and citizen science approach to analyse underwater footage from Sweden’s first marine national park.
 
-Most of these projects involve open-source systems that rely on cameras, AI, and machine learning to track, identify, or study wildlife. The success of these projects indicates that Wildlife.ai is well-prepared to embark on an initiative that leverages its existing capabilities and expands them with multiple integrations
+Most of these projects involve machine vision, open-source systems that rely on AI, and machine learning to track, identify, or study wildlife. Moreover, the projects can be considered the building blocks for this new project since they represent proof of concepts of several feautues. The success of these projects indicates that Wildlife.ai is well-prepared to embark on an initiative that leverages its existing capabilities and expands them with multiple integrations 
 
 ## Architecture Vision
-### Establish the Architecture Project
-This project is supported by WATCH VIDEO  TO JOT DONW THE LEADER THAT SUPPORTS IT
-### Identify Stakeholders, Concerns, and Business Requirements
+### Architecture Project
+This project is supported by Wildlife Excecutive Director Victor Anton and Board member Joshua Yellin ensuring excutive support needed for a project of this importance to the Widlife organization
+### Stakeholders, Concerns, and Business Requirements
 - Biologists: Interested in adopting new technologies to support their work and conservation efforts. Concerns include the costs and learning curve of new solutions. User friendly solutions are preferred
 - Enthusiast: Curious about wildlife, concern about costs and effort.  User friendly. User friendly solutions are important
 - Wildlife.ai: A charitable trust with a keen interest in using artificial intelligence to expedite wildlife conservation. The funding and success of projects are pivotal to its mission and the future of the organization.
+###  Assumptions
+- Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This presents a significant challenge as the system needs to function in remote or potentially off-grid areas, where connectivity may be limited or unreliable.
+- Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
+- Limited User Base: The user base comprises only a few hundred users. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
+- Camera: Currently Wildlife.ai has a project called Wildlife Watcher that develop a camera that could be enhance for this project. Assumption is that this camera will be used and will have at least these minimum specifications:
+  - Wildlife Camera
+    - Hardware
+      - Physical devices
+      - Ultra-low-power microcontrollers (up to 512KB Flash)
+      - Watertight 3D Printed Enclosure
+     - Interchangeable modules including
+        - optical sensors
+        - IR lights
+        - transceiver modules
+        - batteries
+    - Software
+      - Triggered based on the movement of target animals
+      - Sends small alert message to the users via LoraWan, 3G or satellite
+      - Captures video footage
+      - Processes video
+      - Identifies  species
+      - Provides an API or interface to control camera and settings and download models
+      - Identifies species using models
 
-## Opportunities and Solutions
-
-##  Assumptions
-Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This presents a significant challenge as the system needs to function in remote or potentially off-grid areas, where connectivity may be limited or unreliable.
-
-Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
-
-Limited User Base: The user base comprises only a few hundred users. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
-
-
-## Overall Solution
-
-
-### Phases
-#### Near term
-Focus on camera API and Mobile app
-Release code so community can contribute to it
-#### Mid term
+### Overall Solution
+Develop and mobile application that can run on the leading operating systems (i.e. windows, MacOS, Android) that provides the following features:
+  - Camera control
+    - Turn on and off
+    - Change settings
+    - Upload models
+  - Receives alerts from cameras via email
+  - Integrated with third-party platforms to analyzes videos
+  - Allow to label vidos to enable training edge models
+  - Publishes frames to iNaturalist
+  - Publishes species occurrences
+#### Phases
+##### Near term
+Focus should be on specifying the API needed on the wildlife cameras and on developing the Mobile app with a minimum set of features that proof viability of this project. These minimum set of feauture must include:
+- Android (due to its share of the [mobile market share](https://gs.statcounter.com/os-market-share/mobile/worldwide)) 
+- Camera control
+  - Turn on and off
+  - Change settings
+  - Upload models
+- Receives alerts from cameras via email
+- All integrations can be done at this time manually by using the third party sites to upload picture and videos for identification
+- Release code so community can contribute to it
+##### Mid term
 Start developing most importatnt integrations
-#### Long term
+- Integrated with third-party platforms to analyzes videos
+- Allow to label vidos to enable training edge models
+- Publishes frames to iNaturalist
+- Publishes species occurrences
+##### Long term
 Develop integrations
