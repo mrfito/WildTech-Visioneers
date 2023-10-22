@@ -1,5 +1,5 @@
 # WildTech-Visioneers
-This is the GitHub repo for the solution created by team WildTech-Visioneerss for the 2023 O'Reilly Architectural Kata. It contains a proposed architecture for Wildlife.ai.
+This is the GitHub repository for a solution created by team WildTech-Visioneers team during the 2023 O'Reilly Architectural Kata. It contains a proposed architecture for Wildlife.ai project for open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
 
 Team contact: NEED GROUP ADDRESS
 
@@ -33,15 +33,15 @@ The API for the specific camera hasn’t been selected, allowing teams to specif
 Using https://www.developertoarchitect.com/downloads/architecture-characteristics-worksheet.pdf
 
 
-- Scalabitliy: to support hundreds of users
-- Availability, reliabilty, performance: to support near real time communication
-- Interoperability: The architecture should support integration with various third-party services and platforms, such as Wildlife Insights, TrapTagger, iNaturalist, and GBIF. Interoperability enables users to work with their preferred tools and extends the project's reach by connecting it to established conservation and research networks. Since requeriments state 
+- Scalability: Ensuring the system can support hundreds
+- Availability, reliabilty, performance: Facilitating near real time communication
+- Interoperability: Allowing seamless integration with third-party services and platforms such as Wildlife Insights, TrapTagger, iNaturalist, and GBIF. Interoperability enables users to work with their preferred tools and extends the project's reach by connecting it to established conservation and research networks. Since requeriments state 
   - communicate with camera
   - analyze video using third party platforms
   - Publish to iNaturalist
   - Train model
   - Publish
- - Security: To protect the data and prevent unauthorized access
+- Security: To protect the data and prevent unauthorized access
 
 ## Identify Components
 - User
@@ -49,39 +49,42 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
     - Turn on and off
     - Change settings
     - Upload models
-  - Receive small alert from camera
-  - Analyze videos using third parties
-  - Train edge models. using their own labelled videos
-  - Publish frames to iNaturalist
-  - Publish species occurrances
+  - Receives alerts from cameras
+  - Analyzes videos using third-party platforms
+  - Trains edge models using labeled videos
+  - Publishes frames to iNaturalist
+  - Publishes species occurrences
+
+
 - System: Mobile App
 - Wildlife Camera
   - Hardware
-    - physical devices
-    - ultra-low-power microcontrollers (up to 512KB Flash)
-    - watertight 3D Printed Enclosure
-    - interchangeable modules including
+    - Physical devices
+    - Ultra-low-power microcontrollers (up to 512KB Flash)
+    - Watertight 3D Printed Enclosure
+    - Interchangeable modules including
       - optical sensors
       - IR lights
       - transceiver modules
       - batteries
   - Software
-    - triggered based on the movement of target animals
-    - send a small alert message to the users via LoraWan, 3G or satellite
-    - capture video footage
-    - process video
-    - identifies the species
-    - An API or interface that allows Mobile app to communicate with the cameras.
+    - Triggered based on the movement of target animals
+    - Sends small alert message to the users via LoraWan, 3G or satellite
+    - Captures video footage
+    - Processes video
+    - Identifies  species
+    - Provides an API or interface to control camera and settings and upload models
+    - Run models
 - Third party services (AI, etc)
 
 
 ADRs
-The linked ADRs below record the main architecture decisions regarding the proposed design, including their context and rationale.
+The linked ADRs contain the primary architectural decisions regarding the proposed design, including their context and rationale.
 
 ADR 001 - xxxx
 
 ## Preliminary phase
-Before proposing an architecture, one must better understand the organization, its context and its capabilities.
+Before proposing an architecture, a comprehensive understanding of the organization, its context, and its capabilities is essential
 
 Wildlife.ai (from website)
 
@@ -97,8 +100,15 @@ To ensure artificial intelligence is widely applied to protect biodiversity.
 [Nesher Bari](https://wildlife.ai/projects/nesher-bari/) Using data analytics to boost the protection of griffon vultures.
 [Koster Observatory](https://wildlife.ai/projects/koster-observatory/) A machine learning and citizen science approach to analyse underwater footage from Sweden’s first marine national park.
 
-Most of the project above include open source system that rely on cameras to capture wildlife and the use of machine learning and AI to aid in tracking, identifying, or studying wildlife. The first project is the wildlife camera that will be use on this solution.
+Most of these projects involve open-source systems that rely on cameras, AI, and machine learning to track, identify, or study wildlife. The success of these projects indicates that Wildlife.ai is well-prepared to embark on an initiative that leverages its existing capabilities and expands them with multiple integrations
 
-The sucess of the current open source project using cameras and AI makes indicates that Wildlife.ai is ready to embark on initiative that leverages its current capabilities and expands them with the introuction of multiple integrations.
+## Architecture Vision
+### Establish the Architecture Project
+This project is supported by WATCH VIDEO  TO JOT DONW THE LEADER THAT SUPPORTS IT
+### Identify Stakeholders, Concerns, and Business Requirements
+- Biologists: Interested in adopting new technologies to support their work and conservation efforts. Concerns include the costs and learning curve of new solutions. User friendly solutions are preferred
+- Enthusiast: Curious about wildlife, concern about costs and effort.  User friendly. User friendly solutions are important
+- Wildlife.ai: A charitable trust with a keen interest in using artificial intelligence to expedite wildlife conservation. The funding and success of projects are pivotal to its mission and the future of the organization.
 
+##  Opportunities and Solutions
 ## Overall Solution
